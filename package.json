@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "set NODE_OPTIONS=--openssl-legacy-provider node config-overrides.js && ng serve --port 8080",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider node config-overrides.js && ng build",
+  "start": "NODE_OPTIONS=--openssl-legacy-provider ng serve",
+  "build": "NODE_OPTIONS=--openssl-legacy-provider ng build",
+  "test": "NODE_OPTIONS=--openssl-legacy-provider ng test",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
